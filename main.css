@@ -1,5 +1,5 @@
 
-
+/*header*/
 .logoName{
   /*font-family: 'Schoolbell', cursive;*/
   /*font-family: 'Sacramento', cursive;*/
@@ -16,6 +16,8 @@ overflow: scroll;
 float: right;
 }
 
+/*end of header//////////////////////////*/
+
 /*top parallax-window*/
 .parallax-window {
     min-height: 700px;
@@ -31,16 +33,28 @@ float: right;
   font-size: 50px;
 }
 
+/*about us content*/
 .containerAbout{
   margin: 50px;
   text-align: center;
+  /*background-color: #BDBBB0;*/
 }
 
-.theTeam{
+#aboutUs{
+  font-family: 'Satisfy', cursive;
+  font-size: 40px;
+
+}
+
+.middleContent{
+  font-family: 'Sarala', sans-serif;
+  font-size: 15px;
+}
+
+.theTeam, .jack{
   text-align: center;
   color: #660000;
   font-family: 'Satisfy', cursive;
-
 
 }
 
@@ -48,3 +62,5 @@ float: right;
   height: 300px;
   width: auto;
 }
+
+/*end of about us content/////////////////*/
