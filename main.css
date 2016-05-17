@@ -1,0 +1,50 @@
+
+
+.logoName{
+  /*font-family: 'Schoolbell', cursive;*/
+  /*font-family: 'Sacramento', cursive;*/
+  font-family: 'Satisfy', cursive;
+  font-size: 50px;
+  color: #660000;
+  margin-left: 20px;
+}
+
+/*top navbar*/
+.nav-item{
+text-align: right;
+overflow: scroll;
+float: right;
+}
+
+/*top parallax-window*/
+.parallax-window {
+    min-height: 700px;
+    background: transparent;
+}
+
+
+/*slogan inside the parallax-window*/
+.inspired{
+  color: white;
+  font-family: 'Satisfy', cursive;
+  /*text-align: center;*/
+  font-size: 50px;
+}
+
+.containerAbout{
+  margin: 50px;
+  text-align: center;
+}
+
+.theTeam{
+  text-align: center;
+  color: #660000;
+  font-family: 'Satisfy', cursive;
+
+
+}
+
+#jack{
+  height: 300px;
+  width: auto;
+}
