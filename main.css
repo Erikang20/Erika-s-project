@@ -64,3 +64,23 @@ float: right;
 }
 
 /*end of about us content/////////////////*/
+
+
+
+/*login page/////////////////////////////*/
+
+
+
+ .field{
+  /*width: 300px;*/
+  color: green;
+  font-size: 17px;
+  /*background-color: blue;*/
+}
+
+
+
+#password, #username{
+  font-size: 50px;
+  background-color: red;
+}
