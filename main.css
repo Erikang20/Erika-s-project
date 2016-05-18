@@ -598,5 +598,7 @@ textarea.form-control {
 
 .legendNewUser{
   font-size: 30px;
-  color: #009EE3;
+  color: #0E273C;
+  /*color: #009EE3;*/
+  font-family: 'Roboto', sans-serif;
 }
