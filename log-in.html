@@ -10,8 +10,11 @@
 
     <!-- css -->
     <link rel="stylesheet" href="main.css">
-    <!-- header font -->
-    <link href='https://fonts.googleapis.com/css?family=Sacramento|Satisfy|Schoolbell|Sarala' rel='stylesheet' type='text/css'>
+
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Sacramento|Satisfy|Schoolbell|Sarala" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+
     <!-- Bootstrap CSS -->
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
 
@@ -23,11 +26,13 @@
 
     <!-- semantic ul link -->
     <link rel="stylesheet" type="text/css" href="semantic.css">
-    <script src="semantic/dist/semantic.min.js"></script>
+    <script src="semantic/semantic.min.js"></script>
 <!-- End of the CSS -->
+
   </head>
 
     <body>
+
       <header id="navigation" class="navbar-inverse navbar-fixed-top animated-header">
         <!-- <nav class="collapse navbar-collapse navbar-right" role="navigation"> -->
         <div class="container">
@@ -47,9 +52,9 @@
           <nav class="collapse navbar-collapse navbar-right" role="navigation">
             <ul id="nav" class="nav navbar-nav">
               <li class="nav-item"><a class= "navbar-link" href="index.html">Home</a></li>
-              <li class="nav-item"><a class="navbar-link" href="#contact">Contact Us</a></li>
-              <li class="nav-item"><a class="navbar-link" href="#theTeam">Meet the Team</a></li>
-              <li class="nav-item"><a class="navbar-link" href="#aboutUs">About us</a></li>
+              <li class="nav-item"><a class="navbar-link" href="index.html">Contact Us</a></li>
+              <li class="nav-item"><a class="navbar-link" href="index.html">Meet the Team</a></li>
+              <li class="nav-item"><a class="navbar-link" href="index.html">About us</a></li>
             </ul>
           </nav>
           <!-- /main nav -->
@@ -61,36 +66,34 @@
           <section class="content-holder" style="opacity: 1; transform: translateY(25px);">
             <div class="parallax-window" data-parallax="scroll" data-image-src="http://i.imgur.com/nRc9wGk.jpg"></div>
               <div class="parallax-slider">
-                <span class="inspired" style="position:absolute; top: 300px; left: 200px;">
-                    <!-- <a href="#">Find Out More</a> -->
+                <span class="inspired" style="position:absolute; top: 300px; left: 100px;">
 
-                      <div class="ui two column middle aligned very relaxed stackable grid">
-                          <!-- <div class="column"> -->
-                            <div class="ui form">
-                             <div class="field">
-                                <!-- <label id="username">Username</label> -->
-                                <div class="ui left icon input">
-                                  <input type="text" placeholder="Username">
-                                  <i class="user icon"></i>
-                                </div>
+                    <!-- login form inside parallax -->
 
-                              </div>
-                              <div class="field">
-                                <!-- <label id="password">Password</label> -->
-                                <div class="ui left icon input">
-                                  <input type="password">
-                                  <i class="lock icon"></i>
-                                </div>
-                                  <input type="checkbox" name="remember"> Stay signed in
-                              </div>
-                              <div class="ui blue submit button">Login</div>
-                            </div>
-                          </div>
-                          <div class="ui vertical divider">
-                          </div>
-                          <!-- facebook login -->
-                          <div id="fb-root"></div>
-                          <div class="fb-login-button" data-max-rows="1" data-size="medium" data-show-faces="false" data-auto-logout-link="false"></div>
+
+                <fieldset>
+                  <legend class="legendNewUser">New user?</legend>
+                  <h1 class="joinUs">Be part of the best puppy networking in Austin!</h1>
+                    <form>
+                      <div class="form-group row">
+                        <label for="name">Join us </label>
+                        <!-- <div class="col-sm-10"> -->
+                          <input type="text" class="form-control" id="userName" placeholder="Name">
+                        </div>
+
+                        <!-- <div class="form-control row"> -->
+                        <!-- <label for="inputEmail" class="col-sm-2 form-control-label">Email</label> -->
+                        <div class="col-sm-10">
+                          <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+                        </div>
+                      <!-- </div> -->
+
+                      <!-- </div> -->
+
+                      <a target="_blank" title="follow me on facebook" href="http://www.facebook.com"><img alt="follow me on facebook" src="https://c866088.ssl.cf3.rackcdn.com/assets/facebook40x40.png">
+                      </a>
+                    </form>
+                  </fieldset>
 
                       </span>
                     </div>
@@ -100,6 +103,7 @@
 
 <footer>
 
+  <nav class="nav navbar-inverse">
   <div class="footer-social">
     <ul>
       <li class="wow animated zoomIn"><a href="#"><i class="fa fa-thumbs-up fa-3x"></i></a></li>
@@ -111,15 +115,14 @@
   <p>Copyright &copy; 2016 Design and Developed By Erika Angarita</p>
 
   <!-- <div class="row">
-  <nav class="nav navbar-inverse">
         <ul class="nav navbar-nav navbar">
           <button class="ui facebook button"><i class="facebook icon"></i>Facebook</button>
           <button class="ui twitter button"><i class="twitter icon"></i>Twitter</button>
           <button class="ui instagram button"><i class="instagram icon"></i>Instagram</button>
 
         </ul>
-      </nav>
     </div> -->
+  </nav>
 </footer>
 <!-- jquery -->
 <script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
@@ -127,7 +130,7 @@
 <script type="text/javascript" src="app.js"></script>
 
 <!-- unsplashjs -->
-<script src="/js/unsplash-source.js"></script>
+<!-- <script src="/js/unsplash-source.js"></script> -->
 
 
 <!-- bootstrap -->
@@ -152,8 +155,7 @@
     <script src="js/jquery.singlePageNav.min.js"></script>
 <!-- jquery.fancybox.pack -->
     <script src="js/jquery.fancybox.pack.js"></script>
-<!-- Google Map API -->
-<script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+
 <!-- Owl Carousel -->
     <script src="js/owl.carousel.min.js"></script>
     <!-- jquery easing -->
