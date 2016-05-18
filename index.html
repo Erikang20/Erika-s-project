@@ -14,28 +14,60 @@
     <!-- Bootstrap CSS -->
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
 
+   <!-- bootstrap.min -->
+       <link rel="stylesheet" href="css/animate.css">
 
-   <!-- animsition.css -->
-   <!-- <link rel="stylesheet" href="../dist/css/animsition.min.css"> -->
+     <!-- animate.css -->
+     <link rel="stylesheet" href="animate.css">
 
     <!-- semantic ul link -->
     <link rel="stylesheet" type="text/css" href="semantic.css">
     <script src="semantic/dist/semantic.min.js"></script>
 <!-- End of the CSS -->
-
   </head>
 
-    <body>
-      <header>
+
+
+    <body id="body">
+
+      <!-- preloader -->
+
+      <div id="preloader">
+              <div class="loder-box">
+                <div class="battery"></div>
+              </div>
+      </div>
+      <!-- end preloader -->
+
+      <header id="navigation" class="navbar-inverse navbar-fixed-top animated-header">
+        <!-- <nav class="collapse navbar-collapse navbar-right" role="navigation"> -->
+        <div class="container">
+          <div class="navbar-header">
+
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
 
             <h1 class="logoName">PuppyLink</h1>
+          </div>
 
-                <ul class="nav navbar">
-              <li class="nav-item"><a class="navbar-link" href="#aboutUs">About us</a></li>
+          <!-- main nav -->
+          <nav class="collapse navbar-collapse navbar-right" role="navigation">
+            <ul id="nav" class="nav navbar-nav">
               <li class="nav-item"><a class= "navbar-link" href="log-in.html">Log In</a></li>
+              <li class="nav-item"><a class="navbar-link" href="#contact">Contact Us</a></li>
               <li class="nav-item"><a class="navbar-link" href="#theTeam">Meet the Team</a></li>
-              <li class="nav-item"><a class="navbar-link" href="ContactUs.html">Contact Us</a></li>
+              <li class="nav-item"><a class="navbar-link" href="#aboutUs">About us</a></li>
             </ul>
+          </nav>
+          <!-- /main nav -->
+
+      </div>
+   </header>
+   <!-- end of the header and top navigation -->
 
           <!-- parallax section -->
           <section class="content-holder" style="opacity: 1; transform: translateY(25px);">
@@ -46,17 +78,21 @@
                 </div>
           </section>
 
-    </header>
 
-          <div class="containerAbout container">
-              <a id="aboutUs">About us</a>
+<!-- about us section -->
+          <section id="aboutUs" >
+            <div class="container">
+              <div class="row">
+                <div class="col-md-8 wow animated fadeInLeft">
+
+          <!-- <div class="containerAbout container"> -->
+              <a>About us</a>
                 <div class="content">
               <p class="middleContent"> One of the main issues that my husband and I have is to find a good place that take real good care of our two year old Schnoodle Jackson.
                   You can easily find places to board your dog per night, and people who would watch the dog in their house for almost the same amount of money than comun boarding place.
                   However, as a dog parent I can’t help but wonder how people can really trust on the reviews that you find in their website that other people had posted about this place or that person who took care of your dog.
                   The dog certainly can’t tell you if someone on the house/place was mean to him/her. He can’t let you know if he/she got his walk or if he/she was or not on the crate the whole day.
                   That’s why this website is about creating a trustworthy networking of dog boarding and puppy play date that involve your friends and people that you know and trust to take care of your dog.</p>
-
 
                 <p class="middleContent"> Creating a connection with your friends on Facebook, you can decide to add friends who have dogs or that don’t have dogs but they would love to take care of them while you are away.
                 You can also create a personal profile for you and your dog, and add a list of preferences where you can describe everything about your dog, preferences on food, treats, toys, places to go off leash.
@@ -66,17 +102,29 @@
                 <a href="readMore.html">Read more</a>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+      <!-- end about section /////////////////////////-->
 
-          <!-- parallax section -->
+
+          <!-- parallax middle section -->
       <section class="content-holder" style="opacity: 1; transform: translateY(25px);">
             <div class="parallax-window" data-parallax="scroll" data-image-src="http://i.imgur.com/nRc9wGk.jpg"></div>
             <div class="parallax-slider">
 
 
-              <h1 id="theTeam">Meet the team</h1>
+<!-- meet the team section -->
+<div id="theTeam">
 
+          <div class="container">
               <div class="row">
-                <div class="col-sm-6 col-md-4">
+
+                <div class="sec-title text-center">
+                  <h1 class="wow animated bounceInLeft">Meet the team</h1>
+                </div>
+
+                <div class="col-sm-6 col-md-4 text-center wow animated zoomIn" data-wow-delay="0.3s">
                   <div class="thumbnail">
                     <img id="jack" src="http://i.imgur.com/QOUTRYI.jpg" class="img-responsive" alt="Responsive image">
                       <h1 class="jack">Jackson</h1>
@@ -86,18 +134,20 @@
                   </div>
                 </div>
 
-                <div class="col-sm-6 col-md-4">
+                <div class="col-sm-6 col-md-4 text-center wow animated zoomIn" data-wow-delay="0.6s">
                   <div class="thumbnail">
                   <div class="erika">
+                    <img id="erika" src="http://i.imgur.com/uGkPwtw.jpg" class="img-responsive" alt="responsive image">
                   <h1>Erika</h1>
                   <p>some things going here</p>
                 </div>
               </div>
             </div>
 
-            <div class="col-sm-6 col-md-4">
+            <div class="col-sm-6 col-md-4 text-center wow animated zoomIn" data-wow-delay="0.9s">
               <div class="thumbnail">
                 <div class="cory">
+                  <img id="cory" src="http://i.imgur.com/siBosiI.jpg" class="img-responsive" alt="responsive image">
                   <h1>Cory</h1>
                   <p>more stuff here</p>
                 </div>
@@ -105,10 +155,87 @@
             </div>
           </div>
         </div>
+      </div>
+
+<!-- end of the team presentation -->
+
+<!-- Social section -->
+<section id="social" class="parallax">
+  <div class="overlay">
+    <div class="container">
+      <div class="row">
+
+        <div class="sec-title text-center white wow animated fadeInDown">
+          <h2>FOLLOW US</h2>
+          <p>Beautifully simple follow buttons to help you get followers on</p>
+        </div>
+
+        <ul class="social-button">
+          <li class="wow animated zoomIn"><a href="#"><i class="fa fa-thumbs-up fa-2x"></i></a></li>
+          <li class="wow animated zoomIn" data-wow-delay="0.3s"><a href="#"><i class="fa fa-twitter fa-2x"></i></a></li>
+        </ul>
+
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end Social section -->
+
+<!-- Contact section -->
+<section id="contact" >
+  <div class="container">
+    <div class="row">
+
+      <div class="sec-title text-center wow animated fadeInDown">
+        <h2>Contact Us</h2>
+        <p>Leave us a Message</p>
+      </div>
+
+
+      <div class="col-md-7 contact-form wow animated fadeInLeft">
+        <form action="#" method="post">
+          <div class="input-field">
+            <input type="text" name="name" class="form-control" placeholder="Your Name...">
+          </div>
+          <div class="input-field">
+            <input type="email" name="email" class="form-control" placeholder="Your Email...">
+          </div>
+          <div class="input-field">
+            <input type="text" name="subject" class="form-control" placeholder="Subject...">
+          </div>
+          <div class="input-field">
+            <textarea name="message" class="form-control" placeholder="Messages..."></textarea>
+          </div>
+              <button type="submit" id="submit" class="btn btn-blue btn-effect">Send</button>
+        </form>
+      </div>
+
+      <div class="col-md-5 wow animated fadeInRight">
+        <address class="contact-details">
+          <h3>Contact Us</h3>
+          <p><i class="fa fa-envelope"></i>website@yourname.com</p>
+        </address>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- end Contact section -->
+
 
         <footer>
 
-          <div class="row">
+          <div class="footer-social">
+            <ul>
+              <li class="wow animated zoomIn"><a href="#"><i class="fa fa-thumbs-up fa-3x"></i></a></li>
+              <li class="wow animated zoomIn" data-wow-delay="0.3s"><a href="#"><i class="fa fa-twitter fa-3x"></i></a></li>
+              <li class="wow animated zoomIn" data-wow-delay="0.6s"><a href="#"><i class="fa fa-skype fa-3x"></i></a></li>
+            </ul>
+          </div>
+
+          <p>Copyright &copy; 2016 Design and Developed By Erika Angarita</p>
+
+          <!-- <div class="row">
           <nav class="nav navbar-inverse">
                 <ul class="nav navbar-nav navbar">
                   <button class="ui facebook button"><i class="facebook icon"></i>Facebook</button>
@@ -117,13 +244,16 @@
 
                 </ul>
               </nav>
-            </div>
+            </div> -->
         </footer>
-</section>
       <!-- jquery -->
       <script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
       <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
       <script type="text/javascript" src="app.js"></script>
+
+      <!-- unsplashjs -->
+      <script src="/js/unsplash-source.js"></script>
+
 
       <!-- bootstrap -->
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -132,19 +262,34 @@
 
       <!-- parallax -->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-        <script src="parallax.js"></script>
+      <script src="parallax.js"></script>
 
 
         <!-- jQuery -->
         <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> -->
-        <!-- animsition.js -->
-        <!-- <script src="../dist/js/animsition.min.js"></script> -->
 
 
-    <!-- skroll -->
-      <!-- <script type="text/javascript" src="skrollr.min.js"></script>
-      <script type="text/javascript"> -->
-      <!-- // var s = skrollr.init(); -->
+        <!-- Main jQuery -->
+            <script src="js/jquery-1.11.1.min.js"></script>
+    		<!-- Twitter Bootstrap -->
+            <script src="js/bootstrap.min.js"></script>
+    		<!-- Single Page Nav -->
+            <script src="js/jquery.singlePageNav.min.js"></script>
+    		<!-- jquery.fancybox.pack -->
+            <script src="js/jquery.fancybox.pack.js"></script>
+    		<!-- Google Map API -->
+    		<script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+    		<!-- Owl Carousel -->
+            <script src="js/owl.carousel.min.js"></script>
+            <!-- jquery easing -->
+            <script src="js/jquery.easing.min.js"></script>
+            <!-- Fullscreen slider -->
+            <script src="js/jquery.slitslider.js"></script>
+            <script src="js/jquery.ba-cond.min.js"></script>
+    		<!-- onscroll animation -->
+            <script src="js/wow.min.js"></script>
+    		<!-- Custom Functions -->
+            <script src="js/main.js"></script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
