@@ -206,7 +206,7 @@ main > section {
     border-bottom: 1px solid #fff;
 }
  /*preloader this works//////////*/
-/*#preloader {
+#preloader {
     background-color: #fff;
     position: fixed;
     width: 100%;
@@ -215,7 +215,7 @@ main > section {
 }
 
 /*Battery*/
-/*.loder-box {
+.loder-box {
   background-color: rgba(0, 0, 0, 0.02);
   border-radius: 1px;
   height: 100px;
@@ -264,7 +264,7 @@ main > section {
 @keyframes charge{
     0%{box-shadow: inset 0px 0px 0px #2E2E2E;}
     100%{box-shadow: inset 60px 0px 0px #2E2E2E;}
-}*/
+}
 
 Header
 /* ==========================================*/
