@@ -7,6 +7,9 @@
     <!-- movile friendly -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>PuppyLink</title>
+  <!-- Firebase -->
+    <script src="https://cdn.firebase.com/js/client/2.4.2/firebase.js"></script>
+
 
     <!-- css -->
     <link rel="stylesheet" href="main.css">
@@ -109,6 +112,16 @@
                       <!-- <a target="_blank" title="follow me on facebook" href="http://www.facebook.com"><img alt="follow me on facebook" src="https://c866088.ssl.cf3.rackcdn.com/assets/facebook40x40.png"> -->
                       <!-- </a> -->
                     </form>
+
+                    <!-- login with Facebook -->
+                          <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+                          </fb:login-button>
+
+                          <div id="status">
+                          </div>
+                          <div id="fb-root"></div>
+                          <div class="fb-login-button" data-max-rows="1" data-size="large" data-show-faces="false" data-auto-logout-link="false"></div>
+                  <!-- <script></script> -->
                   </div>
 
 
