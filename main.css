@@ -50,6 +50,13 @@ overflow: scroll;
   font-family: 'Satisfy', cursive;
   font-size: 50px;
 }
+.inspired2{
+  color: white;
+  font-family: 'Satisfy', cursive;
+  font-size: 20px;
+  padding: 20px;
+
+}
 
 /*about us content*/
 .containerAbout{
@@ -422,9 +429,14 @@ h1.navbar-brand {
 /*=================================================================
 	Contact
 ==================================================================*/
-/*.messageUs{
-  color: #009EE3;
-}*/
+.messageUs{
+  /*color: #009EE3;*/
+  padding-top: 30px;
+}
+
+#contact{
+  height: 80vh;
+}
 .input-field {
     margin-bottom: 10px;
 }
@@ -601,4 +613,12 @@ textarea.form-control {
   color: #0E273C;
   /*color: #009EE3;*/
   font-family: 'Roboto', sans-serif;
+}
+
+#checkbox{
+color:blue;
+}
+
+#loginSection{
+  height: 100vh;
 }

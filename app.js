@@ -16,6 +16,80 @@ $(document).ready(function(){
   	$("#preloader").fadeOut("slow");
     console.log("aaaaaaaakkkkkkkkkkkkkk");
 
+// animation when the page is being scroll
+    $(window).scroll(function () {
+      if ($(window).scrollTop() > 400) {
+        $(".navbar-brand a").css("color","#fff");
+        $("#navigation").removeClass("animated-header");
+      } else {
+        $(".navbar-brand a").css("color","inherit");
+        $("#navigation").addClass("animated-header");
+      }
+      console.log("eeeeeeeeeeeeee");
+    });
+
+
+// login form for new users////////////////////
+
+$("form").on("submit", function(event){
+  event.preventDefault();
+    if($("#existingUserName").val().length===1){
+      $(".error").show();
+      $(".error").text("please enter a password").css("color", "red");
+
+    }
+      else if($("#existingInputPassword").val().length>5){
+        $("form").fadeOut(100);
+        var message=$("<h1>Thank you for join us</h1>").fadeIn(1000);
+        $(".inspired2").append(message);
+        console.log("moreeeeeeeee");
+      }
+    });
+
+      $("#existingInputPassword").on("keypress", function(event){
+        $(".error").hide();
+            if (($("#existingInputPassword").val().length) < 6){
+              $(".form-control").text("Your password should be longer than 6 characters").css("color","blue");
+            }
+              else{
+                $(".form-control").text("");
+                console.log("final");
+
+              }
+      });
+// });
+
+$("contact-form").on("submit", function(event){
+  event.preventDefault();
+  if($(".messageIndex").val().length===1){
+    $(".error").show();
+    $(".error").text("please enter a message").css("color", "red");
+
+  }
+  else if($(".input-field").val().length>5){
+    $("form").fadeOut(100);
+    var message=$("<h1>Thank you for join us</h1>").fadeIn(1000);
+    $("#contact").append(message);
+    console.log("moreeeeeeeee");
+  }
+});
+
+$(".input-field").on("keypress", function(event){
+  $(".error").hide();
+  if (($(".input-field").val().length) < 6){
+    $(".form-control").text("Your password should be longer than 6 characters").css("color","blue");
+  }
+  else{
+    $(".form-control").text("");
+    console.log("final");
+
+  }
+});
+});
+
+});
+
+
   /* ========================================================================= */
   /*	Menu item highlighting
   /* ========================================================================= */
@@ -35,20 +109,7 @@ $(document).ready(function(){
   //     console.log('done scrolling');
   //   }
   // });
-  });
 
-    $(window).scroll(function () {
-        if ($(window).scrollTop() > 400) {
-            $(".navbar-brand a").css("color","#fff");
-            $("#navigation").removeClass("animated-header");
-        } else {
-            $(".navbar-brand a").css("color","inherit");
-            $("#navigation").addClass("animated-header");
-        }
-        console.log("eeeeeeeeeeeeee");
-    });
-
-  });
 
 // $(document).onclick
 

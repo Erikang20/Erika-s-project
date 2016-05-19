@@ -63,58 +63,89 @@
    <!-- end of the header and top navigation -->
 
           <!-- parallax section -->
-          <section class="content-holder" style="opacity: 1; transform: translateY(25px);">
+      <section id="loginSection" class="content-holder" style="opacity: 1; transform: translateY(25px);">
             <div class="parallax-window" data-parallax="scroll" data-image-src="http://i.imgur.com/nRc9wGk.jpg"></div>
               <div class="parallax-slider">
-                <span class="inspired" style="position:absolute; top: 300px; left: 100px;">
+                <span class="inspired2" style="position:absolute; top: 300px; left: 100px;">
 
                     <!-- login form inside parallax -->
 
 
-                <fieldset>
+                    <!-- <fieldset> -->
 
-                  <legend class="legendNewUser">New user?</legend>
-                  <h1 class="joinUs">Be part of the best puppy networking in Austin!</h1>
-                  <h2 class="legendNewUser">Join us!</h2>
-                  <div class="col-md-4">
-                  <form>
-                    <div class="form-group">
-                        <!-- <label class="control-label" for="name">Enter your Name</label> -->
-                          <input type="text" name="something" id="form" class="form-control" placeholder="Your name">
-                      </div>
+                      <legend class="legendNewUser">New user?</legend>
+                      <h1 class="joinUs">Be part of the best puppy networking in Austin!</h1>
+                      <h2 class="legendNewUser">Join us!</h2>
 
-                      <div class="form-group">
-                          <!-- <label class="control-label" for="exampleName">Enter it again?</label> -->
+              <div class="container">
+
+                    <div class="container">
+                      <div class="row">
+                      <div class="col-md-4">
+                      <form id="userInput" class="form-group">
+
+                          <div class="form-group">
+                            <input type="text" name="something" id="form" class="form-control" placeholder="Your name">
+                          </div>
+
+                          <div class="form-group">
                             <input type="text" name="placeholder" id="lastName" class="form-control" placeholder="Your last name">
                           </div>
+
+                          <div class="form-group">
+                          <input type="text" class="form-control" id="userName" placeholder="Your Username">
+                        </div>
 
                           <div class="form-group">
                           <input type="email" class="form-control" id="inputEmail1" placeholder="Your email">
                         </div>
 
                         <div class="form-group">
-                        <input type="password" class="form-control" id="inputPassword1" placeholder="Password">
+                        <input type="password" class="form-control" id="inputPassword" placeholder="Password">
                       </div>
+                      <button type="submit" class="btn btn-primary">Submit</button>
 
-                      <a target="_blank" title="follow me on facebook" href="http://www.facebook.com"><img alt="follow me on facebook" src="https://c866088.ssl.cf3.rackcdn.com/assets/facebook40x40.png">
-                      </a>
+                      <!-- <a target="_blank" title="follow me on facebook" href="http://www.facebook.com"><img alt="follow me on facebook" src="https://c866088.ssl.cf3.rackcdn.com/assets/facebook40x40.png"> -->
+                      <!-- </a> -->
                     </form>
                   </div>
-                  </fieldset>
 
-                      </span>
-                    </div>
+              <!-- </fieldset> -->
 
-  </section>
 
+              <form id="existingUserInput">
+              <div class="row">
+              <div class="col-md-4">
+
+                <div class="form-group">
+                <input type="text" class="form-control" id="existingUserName" placeholder="Your Username or your email">
+              </div>
+
+                <div class="form-group">
+                  <input type="password" class="form-control" id="existingInputPassword" placeholder="Password">
+
+              <input type="checkbox">Remember me
+              <button type="submit" class="btn btn-primary">Sign in</button>
+            </div>
+
+            </div>
+          </div>
+        </form>
+    </div>
+  </div>
+      </div>
+    </span>
+  </div>
+
+</section>
 
 <footer>
 
   <nav class="nav navbar-inverse">
   <div class="footer-social">
     <ul>
-      <li class="wow animated zoomIn"><a href="#"><i class="fa fa-thumbs-up fa-3x"></i></a></li>
-      <li class="wow animated zoomIn" data-wow-delay="0.3s"><a href="#"><i class="fa fa-twitter fa-3x"></i></a></li>
+      <li class="wow animated zoomIn"><a href="https://www.facebook.com/"><i class="fa fa-thumbs-up fa-3x"></i></a></li>
+      <li class="wow animated zoomIn" data-wow-delay="0.3s"><a href="https://twitter.com"><i class="fa fa-twitter fa-3x"></i></a></li>
       <li class="wow animated zoomIn" data-wow-delay="0.6s"><a href="#"><i class="fa fa-skype fa-3x"></i></a></li>
     </ul>
   </div>
@@ -136,14 +167,12 @@
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 <script type="text/javascript" src="app.js"></script>
 
-<!-- unsplashjs -->
-<!-- <script src="/js/unsplash-source.js"></script> -->
-
-
 <!-- bootstrap -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+ -->
 
 <!-- parallax -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
@@ -151,7 +180,7 @@
 
 
 <!-- jQuery -->
-<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 
 
 <!-- Main jQuery -->
