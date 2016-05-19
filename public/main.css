@@ -373,25 +373,46 @@ h1.navbar-brand {
 #cory{
   width: 300px;
   height: auto;
+  position: relative;
+  top: 20px;
+  left: 20px;
+
+
+}
+
+.cory{
+  top: 20px;
+  left: 20px;
+  align-items: center;
+  padding: 20px;
 }
 
 #erika{
   align-items: center;
+  position: relative;
+  left: 30px;
+  padding: 20px;
 }
 
-.history{
-  font-family: 'Sarala', sans-serif;
-  font-size: 20px;
-  color: #133C55;
+#jack{
+  position: relative;
+  left: 30px;
+  padding: 20px;
 
 }
 
 .jack{
   /*color: #009EE3;*/
   color: #386FA4;
+  padding: 20px;
 
 }
 
+.history{
+  font-family: 'Sarala', sans-serif;
+  font-size: 20px;
+  color: #133C55;
+}
 
 
 /*end of about us content/////////////////*/
