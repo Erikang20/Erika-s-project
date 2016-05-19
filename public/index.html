@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>PuppyLink</title>
-    
+
     <!-- Firebase -->
       <script src="https://cdn.firebase.com/js/client/2.4.2/firebase.js"></script>
 
@@ -47,7 +47,7 @@
       <header id="navigation" class="navbar-inverse navbar-fixed-top animated-header">
         <!-- <nav class="collapse navbar-collapse navbar-right" role="navigation"> -->
         <div class="container">
-          <div class="navbar-header">
+          <div class="navbar-header scrollContainer destination0">
 
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
             <span class="sr-only">Toggle navigation</span>
@@ -90,7 +90,7 @@
           <section id="aboutUs" >
             <div class="container">
               <div class="row">
-                <div class="col-md-8 wow animated fadeInLeft">
+                <div class="col-md-8 wow animated fadeInLeft scrollContainer destination25">
           <!-- <div class="containerAbout container"> -->
               <a class="aboutTitle animated infinite jello">About us</a>
                 <div class="content">
@@ -105,7 +105,7 @@
                 In addition, you can find a social calendar with puppy friendly activities around town, take him/her for a walk, grab a beer with your friends, or if you prefer arrange a puppy play date with other dog’s that have similar characteristics than your dog and are also in the puppy networking.
                 </p>
 
-                <a href="about.html">Read more</a>
+                <a href="#">Read more</a>
               </div>
             </div>
           </div>
@@ -136,7 +136,7 @@
                   <div class="thumbnail">
                     <img id="jack" src="http://i.imgur.com/QOUTRYI.jpg" class="img-responsive" alt="Responsive image">
                       <h1 class="jack">Jackson</h1>
-                        <p>Hey there, my name is Jackson and I'm a Schnoodle, I'm 2 and a half years old, and I love kisses and hugs.
+                        <p class="history">Hey there, my name is Jackson and I'm a Schnoodle, I'm 2 and a half years old, and I love kisses and hugs.
                         My parents adopted me two years years ago and I am a very happy dog. I love to play with the ball, eat and take naps.
                         I hope that you want to play with me and I'd love to meet other dogs.</p>
                   </div>
@@ -146,8 +146,11 @@
                   <div class="thumbnail">
                   <div class="erika">
                     <img id="erika" src="http://i.imgur.com/uGkPwtw.jpg" class="img-responsive" alt="responsive image">
-                  <h1>Erika</h1>
-                  <p>something goes here</p>
+                  <h1 class="jack">Erika</h1>
+                  <p class="history">Hi, I'm Erika, I am from Bogota Colombia, and I moved almost two years ago to Austin. I'm currently studying Web Development in Galvanize Austin and I love it.</p>
+                  <p class="history">I love my family and dogs. I love to travel and visit new cities, and rigth now I am ready for my next adventure.</p>
+
+
                 </div>
               </div>
             </div>
@@ -156,8 +159,8 @@
               <div class="thumbnail">
                 <div class="cory">
                   <img id="cory" src="http://i.imgur.com/siBosiI.jpg" class="img-responsive" alt="responsive image">
-                  <h1>Cory</h1>
-                  <p>more stuff here</p>
+                  <h1 class="jack">Cory</h1>
+                  <p class="history">more stuff here</p>
                 </div>
               </div>
             </div>
@@ -200,7 +203,7 @@
 
 
       <div class="col-md-7 contact-form wow animated fadeInLeft">
-        <form action="get" method="post">
+        <form action="form" method="get">
           <div class="input-field">
             <input type="text" name="name" class="form-control" placeholder="Your Name...">
           </div>
@@ -230,21 +233,26 @@
 <!-- end Contact section -->
 
 
-        <footer>
+        <footer class="footer">
 
+          <nav class="nav navbar-inverse">
           <div class="footer-social">
-            <div class="row">
-            <nav class="nav navbar-inverse">
-              <ul class="nav navbar-nav navbar">
+            <!-- <div class="row"> -->
+              <ul>
 
               <li class="wow animated zoomIn"><a href="https://www.facebook.com/"><i class="fa fa-thumbs-up fa-3x"></i></a></li>
               <li class="wow animated zoomIn" data-wow-delay="0.3s"><a href="https://twitter.com"><i class="fa fa-twitter fa-3x"></i></a></li>
-              <li class="wow animated zoomIn" data-wow-delay="0.6s"><a href="#"><i class="fa fa-skype fa-3x"></i></a></li>
+              <li class="wow animated zoomIn" data-wow-delay="0.3s"><a href="https://www.instagram.com"><i class="fa fa-instagram fa-3x"></i></a></li>
+
+
+
+              <!-- <li class="wow animated zoomIn" data-wow-delay="0.6s"><a href="#"><i class="fa fa-skype fa-3x"></i></a></li> -->
             </ul>
             <p>Copyright &copy; 2016 Design and Developed By Erika Angarita</p>
-            </nav>
           </div>
-        </div>
+        </nav>
+      </footer>
+        <!-- </div> -->
 
 
           <!-- <div class="row">
@@ -257,7 +265,6 @@
                 </ul>
               </nav>
             </div> -->
-        </footer>
       <!-- jquery -->
       <script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
       <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>

@@ -1,4 +1,3 @@
-
 a {
     -webkit-transition: all 0.3s ease-out 0s;
        -moz-transition: all 0.3s ease-out 0s;
@@ -25,6 +24,7 @@ a, a:hover, a:focus, .btn:focus {
 text-align: right;
 overflow: scroll;
 }
+
 
 /*end of header//////////////////////////*/
 
@@ -78,7 +78,7 @@ main > section {
 }
 
 .btn-blue {
-    background-color: rgba(0,158,227, 0.78);
+   background-color: rgba(0,158,227, 0.78);
     box-shadow: 0 -2px 0 rgba(0, 0, 0, 0.15) inset;
     padding: 15px 55px;
     color: #fff;
@@ -274,7 +274,7 @@ Header
        -moz-transition: all 0.8s ease 0s;
         -ms-transition: all 0.8s ease 0s;
          -o-transition: all 0.8s ease 0s;
-            transition: all 0.8s ease 0s;
+            transition: all 0.8s ease 100s;
 
     background-color: rgba(0,0,0,.4);
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
@@ -329,6 +329,8 @@ h1.navbar-brand {
   margin-top: 60px;
   padding-top: 60px;
   padding-bottom: 60px;
+  animation-delay: 2s, 4ms;
+
 
 }
 
@@ -364,6 +366,8 @@ h1.navbar-brand {
   height: 300px;
   width: auto;
   position: relative;
+  margin-left: 45px;
+
 }
 
 #cory{
@@ -371,11 +375,29 @@ h1.navbar-brand {
   height: auto;
 }
 
+#erika{
+  align-items: center;
+}
+
+.history{
+  font-family: 'Sarala', sans-serif;
+  font-size: 20px;
+  color: #133C55;
+
+}
+
+.jack{
+  /*color: #009EE3;*/
+  color: #386FA4;
+
+}
+
 
 
 /*end of about us content/////////////////*/
 
 
+/*followus section/////////*/
 #social {
   background-color: #143E51;
     /*background-image: url(../img/slider/banner.jpg);*/
@@ -515,6 +537,8 @@ textarea.form-control {
 
 .subscribe-form {
     position: relative;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
 }
 
 .subscribe, .form-control {
@@ -533,11 +557,13 @@ textarea.form-control {
     border: 0 none;
     border-radius: 0;
     color: #c1c1c1;
-    padding: 13px 20px;
-    position: absolute;
+    /*padding: 13px 20px;*/
+    position: relative;
     overflow: hidden;
     right: 0;
     top: 0;
+    margin-bottom: 50px;
+    padding-bottom: 40px;
 }
 
 .submit-icon .fa-paper-plane {
@@ -621,4 +647,11 @@ color:blue;
 
 #loginSection{
   height: 100vh;
+}
+
+#existingUserInput{
+  position: relative;
+  top: 80px;
+  margin: 20px;
+  padding: 20px;
 }
