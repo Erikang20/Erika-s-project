@@ -676,7 +676,9 @@ textarea.form-control {
 .jackCard{
   position: relative;
   padding: 20px;
-  left: 180px;
+  left: 100px;
+  right: 100px;
+  /*float: left;*/
 }
 
 .inspired3{
@@ -693,10 +695,15 @@ textarea.form-control {
   color: #143E51;
   font-size: 50px;
   text-align: center;
-  padding: 30px;
+  padding: 50px;
 
 }
 
 .jenny{
   float: right;
+}
+
+.things{
+  text-align: center;
+  color: #143E51;
 }
