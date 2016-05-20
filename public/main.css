@@ -421,7 +421,6 @@ h1.navbar-brand {
 /*followus section/////////*/
 #social {
   background-color: #143E51;
-    /*background-image: url(../img/slider/banner.jpg);*/
     margin-bottom: 20px;
 }
 #social .overlay {
@@ -662,10 +661,6 @@ textarea.form-control {
   font-family: 'Roboto', sans-serif;
 }
 
-#checkbox{
-color:blue;
-}
-
 #loginSection{
   height: 100vh;
 }
@@ -681,4 +676,27 @@ color:blue;
 .jackCard{
   position: relative;
   padding: 20px;
+  left: 180px;
+}
+
+.inspired3{
+  text-align: center;
+}
+
+.copyright{
+  text-align: center;
+  color: gray;
+}
+
+.myProfile, .friends{
+  font-family: 'Satisfy', cursive;
+  color: #143E51;
+  font-size: 50px;
+  text-align: center;
+  padding: 30px;
+
+}
+
+.jenny{
+  float: right;
 }
