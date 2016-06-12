@@ -1,6 +1,5 @@
 // parallax section
 $(document).ready(function(){
-  // const Jump = new Jump();
 
   $(window).trigger('scroll');
 
@@ -13,7 +12,6 @@ $(document).ready(function(){
 
   $(window).load(function(){
   	$("#preloader").fadeOut("slow");
-    console.log("aaaaaaaakkkkkkkkkkkkkk");
 
 // animation when the page is being scroll
     $(window).scroll(function () {
@@ -24,7 +22,7 @@ $(document).ready(function(){
         $(".navbar-brand a").css("color","inherit");
         $("#navigation").addClass("animated-header");
       }
-      console.log("eeeeeeeeeeeeee");
+      // console.log("eeeeeeeeeeeeee");
     });
 
   });
@@ -34,10 +32,10 @@ $(document).ready(function(){
 
       $("form").on("submit", function(event){
         event.preventDefault();
-        if($(".messageIndex").val().length===1){
+        if($(".messageIndex").val().length === 1){
           console.log("working?");
         }
-        else if($(".messageIndex").val().length>5){
+        else if($(".messageIndex").val().length > 5){
           $("form").fadeOut(100);
           var message=$("<h1>Thank you for your message We'll be back to you as soon as possible</h1>").fadeIn(1000);
           $(".contact-form").append(message);
@@ -62,16 +60,16 @@ $(document).ready(function(){
 
       $("form").on("submit", function(event){
         event.preventDefault();
-          if($("#inputPassword").val().length===1){
+          if($("#inputPassword").val().length === 1){
             // $("#inputPassword").show();
             // $("#inputPassword").text("please enter a password").css("color", "red");
               console.log("bueno");
           }
-            else if($("#inputPassword").val().length>5){
+            else if($("#inputPassword").val().length > 5){
               $("#userInput").fadeOut(100);
               var message=$("<h1>Thank you for join us</h1>").fadeIn(1000);
               $("form").append(message);
-              console.log("moreeeeeeeee");
+              // console.log("moreeeeeeeee");
             }
         });
 
@@ -86,7 +84,6 @@ $(document).ready(function(){
 
                     }
             });
-
 
 
 
@@ -106,31 +103,7 @@ $(document).ready(function(){
       console.log("mouse leave");
     });
 
-
+/////login to profile page/////////
 $("#login").on("click", function(){
-  window.location="about.html";
+  window.location = "about.html";
 });
-
-
-
-
-  /* ========================================================================= */
-  /*	Menu item highlighting
-  /* ========================================================================= */
-//   $(document).ready(function(){
-//
-//   $('#nav').singlePageNav({
-//     offset: jQuery('#nav').outerHeight(),
-//     filter: ':not(.external)',
-//     speed: 2000,
-//     currentClass: 'current',
-//     easing: 'easeInOutExpo',
-//     updateHash: true,
-//     beforeStart: function() {
-//       console.log('begin scrolling');
-//     },
-//     onComplete: function() {
-//       console.log('done scrolling');
-//     }
-//   });
-// });
